@@ -1,0 +1,37 @@
+name: Veille AO
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 7h UTC = 7h Dakar (Sénégal UTC+0, pas de DST)
+  workflow_dispatch:      # permet un run manuel depuis l'UI GitHub
+
+permissions:
+  contents: write         # requis pour committer state.json après chaque run
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r scraper/requirements.txt
+
+      - name: Run scraper
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python scraper/main.py
+
+      - name: Commit state
+        run: |
+          git config user.email "bot@veille-ao"
+          git config user.name "Veille AO Bot"
+          git add scraper/state.json
+          git diff --staged --quiet || git commit -m "chore: update seen hashes [skip ci]"
+          git push
