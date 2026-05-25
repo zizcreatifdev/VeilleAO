@@ -1,0 +1,130 @@
+{
+  "sources": [
+    {
+      "id": "dcmp",
+      "name": "DCMP",
+      "url": "https://www.dcmp.sn/avis-et-appels-offres",
+      "active": true
+    },
+    {
+      "id": "pnud",
+      "name": "PNUD",
+      "url": "https://procurement-notices.undp.org/view_notices.cfm?filter_country=SN",
+      "active": true
+    },
+    {
+      "id": "marches_sn",
+      "name": "MarchesSN",
+      "url": "https://www.marchesdusenegal.com",
+      "active": true
+    },
+    {
+      "id": "senoffre",
+      "name": "SenOffre",
+      "url": "https://www.senoffre.sn/appels-offres",
+      "active": true
+    },
+    {
+      "id": "joffres",
+      "name": "JOffres",
+      "url": "https://joffres.net/category/appels-doffres",
+      "active": true
+    }
+  ],
+  "themes": [
+    {
+      "id": "communication",
+      "name": "Communication & Branding",
+      "emoji": "🎨",
+      "active": true,
+      "keywords_fr": [
+        "communication", "branding", "identite visuelle", "identité visuelle",
+        "charte graphique", "design packaging", "packaging design",
+        "logo", "identite de marque", "identité de marque",
+        "agence de communication", "campagne de sensibilisation",
+        "publicite", "publicité", "communication visuelle"
+      ],
+      "keywords_en": [
+        "communication", "branding", "logo design", "brand identity",
+        "packaging design", "visual identity", "graphic design",
+        "awareness campaign"
+      ]
+    },
+    {
+      "id": "digital",
+      "name": "IT & Digital",
+      "emoji": "💻",
+      "active": true,
+      "keywords_fr": [
+        "creation site web", "création site web", "developpement web", "développement web",
+        "refonte site", "strategie digitale", "stratégie digitale",
+        "reseaux sociaux", "réseaux sociaux", "application mobile",
+        "transformation digitale", "logiciel"
+      ],
+      "keywords_en": [
+        "website development", "web development", "digital strategy",
+        "social media", "mobile app", "software", "digital transformation"
+      ]
+    },
+    {
+      "id": "evenementiel",
+      "name": "Événementiel & Production",
+      "emoji": "🎬",
+      "active": false,
+      "keywords_fr": [
+        "evenement", "événement", "organisation evenement", "production audiovisuelle",
+        "stand", "salon", "conference", "conférence", "seminaire", "séminaire",
+        "animation", "spectacle"
+      ],
+      "keywords_en": [
+        "event", "event management", "audiovisual production", "conference",
+        "exhibition", "seminar"
+      ]
+    },
+    {
+      "id": "conseil",
+      "name": "Conseil & Stratégie",
+      "emoji": "📊",
+      "active": false,
+      "keywords_fr": [
+        "conseil", "consulting", "strategie", "stratégie", "etude", "étude",
+        "diagnostic", "audit communication", "plan de communication",
+        "plan marketing", "market research"
+      ],
+      "keywords_en": [
+        "consulting", "strategy", "advisory", "study", "audit",
+        "communication plan", "marketing plan"
+      ]
+    },
+    {
+      "id": "formation",
+      "name": "Formation & Éducation",
+      "emoji": "📚",
+      "active": false,
+      "keywords_fr": [
+        "formation", "renforcement capacites", "renforcement de capacités",
+        "atelier", "sensibilisation", "programme education"
+      ],
+      "keywords_en": [
+        "training", "capacity building", "workshop", "education program",
+        "awareness"
+      ]
+    },
+    {
+      "id": "btp",
+      "name": "Construction & BTP",
+      "emoji": "🏗️",
+      "active": false,
+      "keywords_fr": [
+        "construction", "travaux", "batiment", "bâtiment", "infrastructure",
+        "genie civil", "génie civil", "renovation", "rénovation"
+      ],
+      "keywords_en": [
+        "construction", "works", "building", "infrastructure",
+        "civil engineering", "renovation"
+      ]
+    }
+  ],
+  "zones": ["senegal"],
+  "recipients": ["zizcreatif@gmail.com"]
+}
